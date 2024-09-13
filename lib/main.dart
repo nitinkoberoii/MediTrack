@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medi_track/screens/login/login_screen.dart';
+import 'package:medi_track/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'MediTrack',
-      theme: ThemeData(),
-      home: const LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }
